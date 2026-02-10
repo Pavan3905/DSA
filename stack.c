@@ -18,7 +18,7 @@ int push(int n){
         printf("\n[ERROR] Stack Overflow\n");
         return 0;
     }
-    a[x++] = n;
+    a[++x] = n;
     printf("\nPushed %d\n", a[x]);
 }
 
@@ -27,8 +27,7 @@ int pop(){
         printf("\n[ERROR] Stack Underflow\n");
         return 0;
     }
-    --x;
-    printf("\nPopped %d\n", a[x++]);
+    printf("\nPopped %d\n", a[x--]);
 }
 
 int display(){
