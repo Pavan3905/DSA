@@ -1,6 +1,5 @@
 /*Demonstration of Stack Using Arrays*/
-#include <stdio.h> 
-//You can chage the array size by changing this MAX
+#include <stdio.h> 
 #define MAX 5
 
 int a[MAX], x = -1;
