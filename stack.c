@@ -1,4 +1,6 @@
+/*Demonstration of Stack Using Arrays*/
 #include <stdio.h> 
+//You can chage the array size by changing this MAX
 #define MAX 5
 
 int a[MAX], x = -1;
@@ -25,9 +27,8 @@ int pop(){
         printf("\n[ERROR] Stack Underflow\n");
         return 0;
     }
-    int i = x;
     --x;
-    printf("\nPopped %d\n", a[i]);
+    printf("\nPopped %d\n", a[x++]);
 }
 
 int display(){
@@ -46,8 +47,8 @@ int main(void){
     int choose, n;
 
     do{
-        printf("(1)Push (2)Pop (3)Display (4)Exit\n");
-        printf("Enterr Choice : ");
+        printf("\n(1)Push (2)Pop (3)Display (4)Exit\n");
+        printf("Enter Choice : ");
         scanf("%d", &choose);
 
         switch(choose){
