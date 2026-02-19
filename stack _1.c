@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <process.h>
+#include <process.h> // instead you can use stdlib.h
 #define STACK_SIZE 5
 
 void push(int item, int* top, int s[]);
