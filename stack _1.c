@@ -72,4 +72,5 @@ void display(int top, int s[]){
     for(int i = top; i>=0; i--)
         printf("%d ", s[i]);
         printf("\n\n");
+
 }
